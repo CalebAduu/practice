@@ -38,7 +38,7 @@ def create_llms_model():
 # Initialize Streamlit app
 st.title("Lets fight poverty together!")
 st.markdown('<style>h1{color: orange; text-align: center;}</style>', unsafe_allow_html=True)
-st.subheader('🌍 Hey there! I’m your friendly Poverty Eradication Chatbot 🤗 I’ve been designed to learn everything there is to know about one of the world’s biggest challenges—poverty—and how we can work together to end it 💪✨ Whether you’re just curious 🧐, doing research 📚, or looking for real-world solutions 🌱, I’m here to guide you. From the root causes of poverty to inspiring success stories 🌟 and proven strategies from around the world 🌐, I’ve got you covered. Together, we can explore how education 🎓, healthcare 🏥, jobs 💼, and community support 🤝 all play a role in lifting people out of poverty. Just ask me a question ❓ and let’s start this journey of discovery and impact—because learning about poverty eradication is the first step toward making a difference ❤️🌈')
+st.markdown('🌍 Hey there! I’m your friendly Poverty Eradication Chatbot 🤗 I’ve been designed to learn everything there is to know about one of the world’s biggest challenges—poverty—and how we can work together to end it 💪✨ Whether you’re just curious 🧐, doing research 📚, or looking for real-world solutions 🌱, I’m here to guide you. From the root causes of poverty to inspiring success stories 🌟 and proven strategies from around the world 🌐, I’ve got you covered. Together, we can explore how education 🎓, healthcare 🏥, jobs 💼, and community support 🤝 all play a role in lifting people out of poverty. Just ask me a question ❓ and let’s start this journey of discovery and impact—because learning about poverty eradication is the first step toward making a difference ❤️🌈',unsafe_allow_html=True)
 st.markdown('<style>h3{color: pink; text-align: center;}</style>', unsafe_allow_html=True)
 st.markdown('<style>h3{color: pink; text-align: center;}</style>', unsafe_allow_html=True)
 
@@ -87,7 +87,7 @@ container = st.container()
 
 with container:
     with st.form(key='my_form', clear_on_submit=True):
-        user_input = st.text_input("Question:", placeholder="Ask about your Job Interview", key='input')
+        user_input = st.text_input("Question:", placeholder="Ask me anything!", key='input')
         submit_button = st.form_submit_button(label='Send')
 
     if submit_button and user_input:
